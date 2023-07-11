@@ -1,0 +1,117 @@
+body{
+    background-image: url(Images/food5.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+}
+.signupfrm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form{
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.377);
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+}
+.title{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.inputcontainer{
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+}
+.input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #dadce0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+}
+::placeholder{
+    color: transparent;
+}
+.label{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #dadce0;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+.submitbtn{
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-weight: 800;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.submitbtn:hover{
+    background-color: black;
+    transform: translateY(-2px);
+}
+.input:focus + .label{
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: green;
+}
+.input:focus{
+    border: 2px solid green;
+}
+.input:not(:placeholder-shown) + .label{
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+}
+a{
+    color: green;
+    font-weight: 900;
+}
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+#inline{
+    margin: 10px 0;
+}
+.arrow{
+    width: 0.5em;
+    height: 0.5em;
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 0.2em solid currentColor;
+    border-bottom: 0.2em solid currentColor;
+    transform: rotate(225deg);
+    margin-left: 0.13em;
+    margin-top: -0.20em;
+
+}
